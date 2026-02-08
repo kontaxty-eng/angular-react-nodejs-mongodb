@@ -1,0 +1,18 @@
+<div class="auth">
+    @if (authMessage()) {
+      <p class="auth-message">{{ authMessage() }}</p>
+    }
+    @if (authEmail()) {
+      <p class="auth-message">Logged in as {{ authEmail() }}</p>
+    }
+    <div class="auth-actions">
+      <button mat-raised-button color="primary" (click)="openDialog('register')">
+        Register
+      </button>
+      <button mat-raised-button color="primary" (click)="openDialog('login')">
+        Login
+      </button>
+      <button mat-stroked-button color="primary" (click)="loadProfile()">Load Profile</button>
+      <button mat-stroked-button color="warn" (click)="logout()">Logout</button>
+    </div>
+</div>

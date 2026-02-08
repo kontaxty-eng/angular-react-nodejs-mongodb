@@ -1,0 +1,14 @@
+<mat-card class="status-card card">
+  <mat-card-title>Backend status</mat-card-title>
+  <mat-card-content>
+    <p>
+      Status:
+      <span class="status" [class.ok]="status() === 'up'" [class.down]="status() === 'down'">
+        {{ status() }}
+      </span>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" (click)="refresh()">Refresh status</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,23 @@
+<mat-toolbar class="header">
+  <button mat-icon-button class="burger-menu" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Angular + Node + Mongo</span>
+  <span class="spacer"></span>
+  <div class="desktop-auth">
+    <app-auth></app-auth>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer mode="over" position="start" class="mobile-sidenav">
+    <div class="sidenav-content">
+      <app-auth></app-auth>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main class="page">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

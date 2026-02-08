@@ -1,0 +1,56 @@
+
+:host {
+	display: block;
+	min-height: 100vh;
+}
+
+.active-link {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 75px;
+}
+
+.burger-menu {
+  display: none;
+  
+  @media (max-width: 767px) {
+    display: inline-flex;
+  }
+}
+
+.desktop-auth {
+  display: flex;
+  
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.sidenav-container {
+  position: absolute;
+  top: 75px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mobile-sidenav {
+  width: 250px;
+  padding: 1rem;
+}
+
+.sidenav-content {
+  padding: 1rem;
+}
+
+.page {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+}

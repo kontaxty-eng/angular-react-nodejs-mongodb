@@ -1,0 +1,16 @@
+.status-card {
+  margin-top: 1rem;
+}
+
+.status {
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.status.ok {
+  color: #22c55e;
+}
+
+.status.down {
+  color: #ef4444;
+}

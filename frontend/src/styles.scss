@@ -1,0 +1,33 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+	--app-bg: #e1e1e1;
+	--app-text: #575757;
+	--card-bg: #b8b6b6;
+	--card-text: #575757;
+	--card-padding: 1rem;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	background: var(--app-bg);
+	color: var(--app-text);
+}
+
+.card {
+	background: var(--card-bg);
+	color: var(--card-text);
+	padding: var(--card-padding);
+    margin: 0.5rem 0;
+
+    
+}
+
+.spacer {
+    flex: 1;
+}

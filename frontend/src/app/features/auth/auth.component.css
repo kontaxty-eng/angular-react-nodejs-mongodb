@@ -1,0 +1,18 @@
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.auth-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.auth-message {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}

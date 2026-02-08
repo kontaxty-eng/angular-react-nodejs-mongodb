@@ -1,0 +1,21 @@
+<mat-toolbar class="header">
+  <button mat-icon-button class="burger-menu" (click)="toggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Angular + Node + Mongo</span>
+  <span class="spacer"></span>
+  <div class="desktop-auth">
+    <app-auth></app-auth>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="over" [(opened)]="sidenavOpened" position="end" class="mobile-sidenav">
+    <div class="sidenav-content">
+      <app-auth></app-auth>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Content will be projected here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

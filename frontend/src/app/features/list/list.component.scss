@@ -1,0 +1,30 @@
+.search-section {
+  margin-bottom: 1.5rem;
+}
+
+.search-field {
+  width: 100%;
+}
+
+.tasks-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+  
+  // Mobile: 1 card per row
+  grid-template-columns: 1fr;
+  
+  // Tablet: 2 cards per row (768px and up)
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  // Desktop: 4 cards per row (1024px and up)
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.full-width {
+  width: 100%;
+}
